@@ -1,4 +1,4 @@
-const BASE_URL=`http://localhost:4000/api/v1/images/upload`
+const BASE_URL=`${import.meta.env.VITE_BACKEND_URL}/api/v1/images/upload`
 
 export const uploadImage = async(formData)=>{
     
