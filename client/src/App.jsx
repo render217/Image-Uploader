@@ -27,6 +27,7 @@ const App = () => {
       setRequestStatus("succeeded");
       setImageLink(result.imageUrl);
     } catch (error) {
+      console.log(error.message)
       setError(error.message);
       setRequestStatus("idle");
     }

@@ -13,7 +13,6 @@ export const uploadImage = async(formData)=>{
         throw new Error("Unable to upload your image")
     }
     const data = await response.json();
-    
-    
+    console.log(data)
     return data
 }
