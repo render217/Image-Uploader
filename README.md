@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="" target="_blank">
+    <a href="https://image-uploader-client-one.vercel.app" target="_blank">
       Demo
     </a>
     <span> | </span>
@@ -82,6 +82,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 
 ## Acknowledgements
-- [Vercel](https://vercel.com/) - For deployment
+- [Vercel](https://vercel.com/) - For frontend deployment
+- [Render](https://render.com) - For backend deployment
 - [fontawesome](https://fontawesome.com)
 - [Cloudinary](https://cloudinary.com) - For image upload
