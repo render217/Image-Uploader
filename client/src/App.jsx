@@ -49,8 +49,9 @@ const App = () => {
                 error ? "text-red-400 font-semibold" : ""
               }`}
             >
-              File should be jpeg,png...
+              File should be jpeg,png... 
             </p>
+            <p className="text-red-400 font-semibold">{error}</p>
             <div
               {...getRootProps({
                 className:
