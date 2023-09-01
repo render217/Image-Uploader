@@ -1,5 +1,5 @@
 // const BASE_URLL=`${import.meta.env.VITE_BACKEND_URL}/api/imageupload`
-const API_URL = `https://image-uploader-six-livid.vercel.app/api/imageupload`
+const API_URL = `https://image-uploader-217.onrender.com/api/imageupload`
 export const uploadImage = async(formData)=>{
     
     const response = await fetch(API_URL,{
