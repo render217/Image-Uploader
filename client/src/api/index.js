@@ -1,8 +1,8 @@
-const BASE_URL=`${import.meta.env.VITE_BACKEND_URL}/api/imageupload`
-
+// const BASE_URLL=`${import.meta.env.VITE_BACKEND_URL}/api/imageupload`
+const API_URL = `https://image-uploader-six-livid.vercel.app/api/imageupload`
 export const uploadImage = async(formData)=>{
     
-    const response = await fetch(BASE_URL,{
+    const response = await fetch(API_URL,{
         method:"POST",
         headers: {
             "Content-Type": "multipart/form-data"
