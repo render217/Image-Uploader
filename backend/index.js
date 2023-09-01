@@ -5,15 +5,9 @@ const imageRoute = require('./src/api')
 const cors = require('cors')
 const app = express();
 
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "https://image-uploader-client-one.vercel.app"); // update to match the domain you will make the request from
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    res.header("Access-Control-Allow-Methods", "GET, POST");
-    next();
-  });
+app.use(cors({
+    origin:'https://image-uploader-client-one.vercel.app'
+}))
 
 app.use('/api',imageRoute)
 

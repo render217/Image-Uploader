@@ -21,13 +21,13 @@ const App = () => {
     const file = acceptedFiles[0];
     const formData = new FormData();
     formData.append("file", file);
-    console.log(formData.get("file"));
+    // console.log(formData.get("file"));
     try {
       const result = await uploadImage(formData);
       setRequestStatus("succeeded");
       setImageLink(result.imageUrl);
     } catch (error) {
-      console.log(error.message)
+      
       setError(error.message);
       setRequestStatus("idle");
     }
