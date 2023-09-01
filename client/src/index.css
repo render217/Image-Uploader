@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+
+    }
+    95%{
+        opacity:1;
+    }
+  
+    100% {
+        transform: translateX(304%);
+        opacity:0.8;
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(260%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 3s linear infinite;
+}
