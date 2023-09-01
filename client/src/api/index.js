@@ -5,10 +5,7 @@ export const uploadImage = async(formData)=>{
     const response = await fetch(BASE_URL,{
         method:"POST",
         headers: {
-            "Content-Type": "multipart/form-data",
-            "Access-Control-Allow-Origin": "*", 
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type",
+            "Content-Type": "multipart/form-data"
           },
         body:formData,
     })
